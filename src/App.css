@@ -1,3 +1,28 @@
+.container {
+  height: 100vh;
+  width: 100vh;
+  border: 20px solid rgb(0, 0, 0);
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tile {
+  height: 300px;
+  background: rgb(39, 61, 134);
+  flex: 1 1 300px;
+  align-self: center;
+}
+
+.formTitle {
+  font-size: x-large;
+  text-align: center;
+}
+
+.errorMessage {
+  color: rgb(255, 0, 0);
+  font-size: small;
+}
+
 .App {
   text-align: center;
 }

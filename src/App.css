@@ -1,5 +1,4 @@
 .container {
-  /* height: 100vh; */
   min-height: 100vh;
   width: 100vw;
   /* border: 10px solid rgb(0, 0, 0); */
@@ -13,11 +12,17 @@
   .container {
     background-image: linear-gradient(to bottom, #ff7b5c, #ff6c81);
   }
+  .formBox {
+    padding: 30px 15px 15px 15px;
+  }
 }
 
 @media (orientation: landscape) {
   .container {
     background-image: linear-gradient(to right, #ff7b5c, #ff6c81);
+  }
+  .formBox {
+    padding: 30px 50px 15px 50px;
   }
 }
 
@@ -25,6 +30,13 @@
   /* background: rgb(39, 61, 134); */
   flex: 1 1 300px;
   align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.formBox {
+  /* padding: 30px 15px 15px 15px; */
+  max-width: 400px;
 }
 
 .formTitle {

@@ -9,7 +9,7 @@ function App() {
   return (
     <React.Fragment>
       <main className="container">
-        <div className="tile">
+        <div className="tile formBox">
           <Card body>
             <div className="formTitle m-2">Hack UCI Application</div>
             <FormikHackForm />

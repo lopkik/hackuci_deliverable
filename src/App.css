@@ -1,14 +1,28 @@
 .container {
-  height: 100vh;
-  width: 100vh;
-  border: 20px solid rgb(0, 0, 0);
+  /* height: 100vh; */
+  min-height: 100vh;
+  width: 100vw;
+  /* border: 10px solid rgb(0, 0, 0); */
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (orientation: portrait) {
+  .container {
+    background-image: linear-gradient(to bottom, #ff7b5c, #ff6c81);
+  }
+}
+
+@media (orientation: landscape) {
+  .container {
+    background-image: linear-gradient(to right, #ff7b5c, #ff6c81);
+  }
 }
 
 .tile {
-  height: 300px;
-  background: rgb(39, 61, 134);
+  /* background: rgb(39, 61, 134); */
   flex: 1 1 300px;
   align-self: center;
 }
@@ -18,9 +32,36 @@
   text-align: center;
 }
 
-.errorMessage {
-  color: rgb(255, 0, 0);
-  font-size: small;
+.petr {
+  /* background: skyblue; */
+  text-align: center;
+  position: relative;
+  animation-name: petranimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes petranimation {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    top: 0px;
+    left: 20px;
+  }
+  50% {
+    top: 20px;
+    left: 20px;
+  }
+  75% {
+    top: 20px;
+    left: 0px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
 }
 
 .App {
@@ -35,29 +76,5 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }

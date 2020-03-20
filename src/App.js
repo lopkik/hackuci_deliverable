@@ -16,7 +16,16 @@ function App() {
           </Card>
         </div>
 
-        <div className="tile">image</div>
+        <div className="tile">
+          <div className="petr">
+            <img
+              src={process.env.PUBLIC_URL + "/img/petr.png"}
+              alt=""
+              height="326"
+              width="242"
+            />
+          </div>
+        </div>
       </main>
     </React.Fragment>
   );

@@ -8,15 +8,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <React.Fragment>
-      <main className="container">
-        <div className="tile formBox">
-          <Card body>
+      <main className="mycontainer">
+        <div className="mytile">
+          <Card body className="formBox">
             <div className="formTitle m-2">Hack UCI Application</div>
             <FormikHackForm />
           </Card>
         </div>
 
-        <div className="tile">
+        <div className="mytile">
           <div className="petr">
             <img
               src={process.env.PUBLIC_URL + "/img/petr.png"}

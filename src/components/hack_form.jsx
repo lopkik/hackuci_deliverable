@@ -108,7 +108,7 @@ const FormikHackForm = withFormik({
         resetForm();
       })
       .catch(err => {
-        console.log(err);
+        console.log("Something went wrong!", err);
       });
     setSubmitting(false);
   }

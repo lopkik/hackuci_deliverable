@@ -1,9 +1,7 @@
 .mycontainer {
   min-height: 100vh;
   min-width: 100vw;
-  /* border: 10px solid rgb(0, 0, 0); */
   display: flex;
-  /* flex-flow: row wrap; */
   align-items: center;
   justify-content: center;
 }
@@ -29,13 +27,8 @@
 }
 
 .mytile {
-  /* background: rgb(39, 61, 134); */
   flex: 1 1 0px;
   align-self: center;
-}
-
-.formBox {
-  max-width: 400px;
 }
 
 .formTitle {
@@ -44,7 +37,6 @@
 }
 
 .petr {
-  /* background: skyblue; */
   text-align: center;
   position: relative;
   animation-name: petranimation;

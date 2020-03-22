@@ -93,7 +93,8 @@ const FormikHackForm = withFormik({
 
   handleSubmit: (values, { resetForm, setSubmitting }) => {
     const { name, email, funFact } = values;
-    const notify = () => toast("Successful submission!");
+    const successNotify = () => toast("Successful submission!");
+    const errNotify = () => toast("Something went wrong :(");
     axios
       .get("https://hack-uci-test-endpoint.herokuapp.com/test", {
         params: {
@@ -104,11 +105,12 @@ const FormikHackForm = withFormik({
       })
       .then(res => {
         console.log(res);
-        notify();
+        successNotify();
         resetForm();
       })
       .catch(err => {
         console.log("Something went wrong!", err);
+        errNotify();
       });
     setSubmitting(false);
   }

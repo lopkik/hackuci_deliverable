@@ -1,7 +1,7 @@
 # Landscape:
 
-![alt-text](https://github.com/lopkik/hackuci_deliverable/public/img/HackUCI_landscape.png "landscape")
+![landscape screenshot](https://github.com/lopkik/hackuci_deliverable/public/img/HackUCI_landscape.png)
 
 # Portrait:
 
-![alt-text](https://github.com/lopkik/hackuci_deliverable/public/img/HackUCI_portrait.png "portrait")
+![portrait screenshot](https://github.com/lopkik/hackuci_deliverable/public/img/HackUCI_portrait.png)
